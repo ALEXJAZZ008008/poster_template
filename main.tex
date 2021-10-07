@@ -1,0 +1,80 @@
+\documentclass[portrait,color=UCLburgundy,margin=2cm]{uclposter}
+
+\input{commands.tex}
+
+\usepackage{bm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{caption}
+\usepackage{blindtext}
+
+\usepackage[acronym]{glossaries}
+
+
+\usepackage[style=ieee,maxbibnames=1,minbibnames=1,maxcitenames=1,mincitenames=1,backend=biber,defernumbers=false]{biblatex}
+\addbibresource{./Biblio.bib}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{LexendDeca-Regular.ttf}
+
+\begin{document}
+
+\title{Title}
+
+\author[1 *]{Author}
+
+\affil[1]{Institute}
+\affil[*]{author@ucl.ac.uk}
+
+\maketitle
+
+\begin{multicols}{2}
+\normalsize
+
+\section*{Introduction}
+    \begin{highlightbox}[UCLlightgreen]
+        \begin{itemize}
+            \item \blindtext
+        \end{itemize}
+    \end{highlightbox}
+
+\section*{Methods}
+    \begin{itemize}
+        \subsection*{\underline{\textbf{Subsection}}}
+            \item \blindtext
+    \end{itemize}
+    
+    \subsection*{\underline{\textbf{Evaluation}}}
+        \begin{highlightbox}[UCLlightgreen]
+            \begin{itemize}
+                \item \blindtext
+            \end{itemize}
+        \end{highlightbox}
+
+\section*{Results}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{example-image-a}
+        \begin{highlightbox}[UCLlightblue]
+            \captionsetup{singlelinecheck=false, justification=centering}
+            \caption{\blindtext}
+        \end{highlightbox}
+        \label{fig:com_graph}
+    \end{figure}
+
+\section*{Conclusion}
+    \begin{itemize}
+        \item \blindtext
+    \end{itemize}
+
+\AtNextBibliography{\small}
+\printbibliography
+
+\small
+\section*{Acknowledgements}
+    \begin{itemize}
+        \item \blindtext
+    \end{itemize}
+
+\end{multicols}
+\end{document}
