@@ -47,7 +47,7 @@
 
 \DeclareOptionX{landscape}{
 	\PassOptionsToPackage{landscape}{geometry}
-	\setlength{\uclposter@bannerheight}{15cm}
+	\setlength{\uclposter@bannerheight}{10cm}
 }
 
 \DeclareOptionX{bannerheight}{
